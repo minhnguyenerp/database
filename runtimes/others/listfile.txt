@@ -1,0 +1,2 @@
+../../mariadb-12.0.2-winx64/bin/server.pdb
+../../postgresql-18.0-2-windows-x64/pgAdmin 4/runtime/pgAdmin4.exe
