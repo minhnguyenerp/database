@@ -19,6 +19,11 @@ echo   Config  : %CONF%
 echo   ErrLog  : %ERRLOG%
 echo ===============================================
 
+for %%F in (mariadbd.exe mariadb-install-db.exe) do (
+  powershell -NoProfile -Command ^
+    "$exe='%BINDIR%\%%F'; if (Test-Path $exe) { if (Get-Item $exe -Stream Zone.Identifier -ErrorAction SilentlyContinue) { Write-Host '[INFO] %%F blocked. Unblocking...'; Unblock-File -LiteralPath $exe; Write-Host '[OK] %%F unblocked.' } else { Write-Host '[OK] %%F clean.' } }"
+)
+
 rem --- Initialize if data folder missing ---
 if not exist "%DATADIR%" (
   echo [INFO] Data directory not found. Running mariadb-install-db...
