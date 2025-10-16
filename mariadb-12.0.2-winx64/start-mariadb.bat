@@ -1,6 +1,6 @@
 @echo off
 setlocal EnableExtensions
-title MariaDB 12 Portable Starter (background hidden)
+rem title MariaDB 12 Portable Starter (background hidden)
 
 rem --- Base paths ---
 set "ROOT=%~dp0"

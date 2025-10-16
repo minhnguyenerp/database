@@ -1,4 +1,5 @@
 @echo off
+title Database Shell
 set "ROOT=%~dp0"
 call "%ROOT%runtimes\others\joinfiles.bat"
 cls

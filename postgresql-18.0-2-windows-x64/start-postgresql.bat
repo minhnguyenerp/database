@@ -1,6 +1,6 @@
 @echo off
 setlocal EnableExtensions
-title PostgreSQL 18 Portable Starter (hidden via PowerShell, always unblock)
+rem title PostgreSQL 18 Portable Starter (hidden via PowerShell, always unblock)
 
 rem --- Paths ---
 set "ROOT=%~dp0"

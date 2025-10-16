@@ -1,6 +1,6 @@
 @echo off
 setlocal EnableExtensions
-title Stop MariaDB Server
+rem title Stop MariaDB Server
 
 set "ROOT=%~dp0"
 set "BINDIR=%ROOT%bin"

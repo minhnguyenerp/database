@@ -1,6 +1,6 @@
 @echo off
 setlocal EnableExtensions
-title Stop PostgreSQL Server
+rem title Stop PostgreSQL Server
 
 set "ROOT=%~dp0"
 set "BINDIR=%ROOT%bin"
